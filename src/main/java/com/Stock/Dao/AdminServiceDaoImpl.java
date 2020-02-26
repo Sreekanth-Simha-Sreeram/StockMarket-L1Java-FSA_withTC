@@ -2,6 +2,7 @@ package com.Stock.Dao;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
@@ -12,15 +13,17 @@ import com.Stock.Entities.IPODetails;
 @Repository ("adminServiceDao")
 
 public class AdminServiceDaoImpl implements AdminServiceDao {
+	
+	@Autowired
 
-	public void createCompany(String companyName) {
+	public void createCompany(Company company) {
 		// TODO Auto-generated method stub
-
+		
 	}
 
-	public Boolean deleteCompany(Integer companyId) {
+	public boolean deleteCompany(int companyId) {
 		// TODO Auto-generated method stub
-		return null;
+		return false;
 	}
 
 	public Company editCompany(String companyName, int companyId) {
@@ -33,7 +36,12 @@ public class AdminServiceDaoImpl implements AdminServiceDao {
 		return null;
 	}
 
-	public List<Company> ViewCompany(Company company) {
+	public List<Company> viewCompany(Company company) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Company findCompany(int companyId) {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -42,5 +50,9 @@ public class AdminServiceDaoImpl implements AdminServiceDao {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	
+	
+	
 
+	
 }

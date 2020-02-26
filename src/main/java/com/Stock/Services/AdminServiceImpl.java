@@ -25,9 +25,9 @@ public class AdminServiceImpl implements AdminService {
 
 	}
 
-	public Boolean deleteCompany(Integer companyId) {
+	public boolean deleteCompany(int companyId) {
+		return true;
 		// TODO Auto-generated method stub
-		return null;
 	}
 
 	public Company editCompany(String companyName, int companyId) {
@@ -40,12 +40,27 @@ public class AdminServiceImpl implements AdminService {
 		return null;
 	}
 
-	public List<Company> ViewCompany(Company company) {
+	public List<Company> viewCompany(Company company) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	public IPODetails updateIPODetails(int ipoId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void createCompany(Company company) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public boolean deleteCompany(Integer companyId) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public Company findCompany(int companyId) {
 		// TODO Auto-generated method stub
 		return null;
 	}

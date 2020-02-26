@@ -12,6 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.Stock.Dao.UserServiceDao;
 import com.Stock.Entities.Chart;
 import com.Stock.Entities.Company;
+import com.Stock.Entities.User;
 
 
 @Component
@@ -22,7 +23,8 @@ public class UserServiceImpl implements UserService {
 	UserServiceDao userServiceDao;
 	@Transactional
 
-	public void updateProfile(int userID) {
+	public User updateProfile(int userID) {
+		return null;
 		// TODO Auto-generated method stub
 
 	}

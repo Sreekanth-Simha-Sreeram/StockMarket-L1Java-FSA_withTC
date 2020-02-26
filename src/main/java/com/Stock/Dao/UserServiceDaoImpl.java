@@ -10,17 +10,17 @@ import org.springframework.stereotype.Repository;
 
 import com.Stock.Entities.Chart;
 import com.Stock.Entities.Company;
+import com.Stock.Entities.User;
 
 @Component
 @Repository ("userServiceDao")
 
 public class UserServiceDaoImpl implements UserServiceDao {
-	
-	@Autowired
-	
-	public void updateProfile(int userID) {
-		// TODO Auto-generated method stub
 
+	@Autowired
+	public User updateProfile(int userID) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	public List<Company> searchCompany(String companyName) {
@@ -47,5 +47,9 @@ public class UserServiceDaoImpl implements UserServiceDao {
 		// TODO Auto-generated method stub
 		return false;
 	}
+	
+
+	
+	
 
 }

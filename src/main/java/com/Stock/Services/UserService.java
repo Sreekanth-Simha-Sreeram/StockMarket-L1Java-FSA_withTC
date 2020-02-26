@@ -5,9 +5,10 @@ import java.util.List;
 
 import com.Stock.Entities.Chart;
 import com.Stock.Entities.Company;
+import com.Stock.Entities.User;
 public interface UserService 
 {
-	 public void updateProfile(int userID);
+	 public User updateProfile(int userID);
 	 public List<Company> searchCompany(String companyName);
 	 public List<Company> filterCompany(String companyName, String companyCode);
 	 Chart GetChart(Company company,String stockExchange,Date fromTime,Date toTime);
